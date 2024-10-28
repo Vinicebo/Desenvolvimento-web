@@ -2,7 +2,7 @@ const container = document.getElementById("container")
 // atleta = dados.filter( (e) => e.id === 40)[0]
 let conteudo = ""
 const montaCard = (atleta) => `
-    <div class ="card">
+    <div class="card">
     <h1>${atleta.nome}</h1>
     <img src=${atleta.imagem}>
     <p>${atleta.detalhes}</p>
