@@ -65,20 +65,3 @@ pega_json("https://botafogo-atletas.mange.li/2024-1/all").then(
         retorno.forEach((atleta) => montaCard(atleta))
     }
 )
-
-const verificaSenha = () => {
-    const entrada = document.getElementById("password").value
-    const senha = "202447d5d44ce12531f7207cb33b6bf7"
-    
-    if (senha === hex_md5(entrada)) {
-        sessionStorage.setItem("logado", "sim")
-        alert("Senha correta. Logado")
-    } else {
-        alert("Senha incorreta.")
-    }
-}
-
-document.getElementById("logout").onclick = () => {
-    sessionStorage.removeItem("logado")
-    alert("Saiu!")
-}
